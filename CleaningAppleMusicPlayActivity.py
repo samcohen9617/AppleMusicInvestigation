@@ -57,3 +57,4 @@ appleActifityDF["LocalTimeFloorHours"] = appleActifityDF["LocalTime"].apply(lamb
 
 
 print(appleActifityDF["LocalTimeFloorHours"].head(10))
+
