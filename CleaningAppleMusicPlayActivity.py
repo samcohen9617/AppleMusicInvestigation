@@ -41,7 +41,8 @@ ftr = [3600, 60, 1]
 
 def sumTime(y):
     y = y.split(':')
-    return sum([a * b for a, b in zip(ftr, map(int, y))])
+    sumTime = sum([a * b for a, b in zip(ftr, map(int, y))])
+    return sumTime
 
 
 appleActifityDF["UTCTimeSeconds"] = appleActifityDF["UTCTime"].apply(sumTime)
@@ -77,11 +78,12 @@ appleActifityDF["FifthOrMoreListened"] = appleActifityDF["ListenedPercent"].appl
 appleActifityDF["ListenedDurationInMinutes"] = (appleActifityDF["Play Duration Milliseconds"] / 1000) / 60
 
 # remove outliers of listening duration
-
 appleActifityDF = appleActifityDF[
     appleActifityDF["ListenedDurationInMinutes"].between(appleActifityDF["ListenedDurationInMinutes"].quantile(0),
                                                          appleActifityDF["ListenedDurationInMinutes"].quantile(.99))]
 
+appleActifityDF = appleActifityDF.drop(["Apple Id Number", "Apple Music Subscription", "Client IP Address", "Content Specific Type",
+"Device Identifier", "Event End Timestamp", "Event Reason Hint Type", "Event Received Timestamp", "Item Type", "Metrics Bucket Id", "Metrics Client Id", "Original Title", "Store Country Name", "UTC Offset In Seconds", "End Position In Milliseconds"], axis=1)
+print(appleActifityDF["ListenedDurationInMinutes"].std())
+print(appleActifityDF.head(10))
 
-print(appleActifityDF["ListenedDurationInMinutes"].head(10))
-print(appleActifityDF["ListenedPercent"].head(10))

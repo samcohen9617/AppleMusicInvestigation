@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fdc51d44-ae6d-42ee-9bab-c88efd1e0382" name="Default Changelist" comment="Testing commit from pycharm">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CleaningAppleMusicPlayActivity.py" beforeDir="false" afterPath="$PROJECT_DIR$/CleaningAppleMusicPlayActivity.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,45 +15,47 @@
     <session id="-121987150">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.18" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="107" />
-          <entry key="py" value="2810" />
+          <entry key="py" value="3137" />
           <entry key="txt" value="38" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="38" />
-          <entry key="Python" value="2917" />
+          <entry key="Python" value="3244" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="cfg" value="1" />
-          <entry key="py" value="6" />
+          <entry key="py" value="7" />
           <entry key="tes" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Python" value="6" />
+          <entry key="Python" value="7" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/testrpy2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="22">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
               <folding>
                 <element signature="e#0#43#0" expanded="true" />
               </folding>
@@ -63,8 +66,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CleaningAppleMusicPlayActivity.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="82" column="117" lean-forward="true" selection-start-line="82" selection-start-column="117" selection-end-line="82" selection-end-column="117" />
+            <state relative-caret-position="188">
+              <caret line="85" column="247" selection-start-line="85" selection-start-column="247" selection-end-line="85" selection-end-column="247" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/pandas/core/series.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="93">
+              <caret line="4180" selection-start-line="4180" selection-end-line="4180" />
             </state>
           </provider>
         </entry>
@@ -104,10 +116,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-247" />
-    <option name="y" value="-1121" />
-    <option name="width" value="282" />
-    <option name="height" value="302" />
+    <option name="x" value="-12" />
+    <option name="y" value="-12" />
+    <option name="width" value="2904" />
+    <option name="height" value="1644" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -115,6 +127,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -122,11 +135,21 @@
               <item name="AppleMusicInvestigation" type="b2602c69:ProjectViewProjectNode" />
               <item name="AppleMusicInvestigation" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="AppleMusicInvestigation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AppleMusicInvestigation" type="462c0819:PsiDirectoryNode" />
+              <item name="venv" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AppleMusicInvestigation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AppleMusicInvestigation" type="462c0819:PsiDirectoryNode" />
+              <item name="venv" type="462c0819:PsiDirectoryNode" />
+              <item name="Lib" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -188,8 +211,8 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.testrpy2" />
       <item itemvalue="Python.CleaningAppleMusicPlayActivity" />
+      <item itemvalue="Python.testrpy2" />
     </list>
     <recent_temporary>
       <list>
@@ -219,28 +242,28 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1088" y="-1098" width="1936" height="1066" extended-state="6" />
+    <frame x="-7" y="-7" width="1295" height="704" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13486141" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20809716" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Python Console" sideWeight="0.8639676" weight="0.35494506" />
-      <window_info anchor="bottom" id="Terminal" sideWeight="0.49959514" weight="0.32967034" />
-      <window_info anchor="bottom" id="Event Log" sideWeight="0.50040483" side_tool="true" weight="0.3989071" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.35934067" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49959514" weight="0.3989011" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3387978" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49959514" weight="0.3970856" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="R Packages" weight="0.50121456" />
-      <window_info anchor="right" id="R Graphics" weight="0.32995737" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49959514" weight="0.32967034" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50040483" side_tool="true" weight="0.3989071" />
+      <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.8639676" weight="0.35494506" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="R Graphics" order="3" weight="0.32995737" />
+      <window_info anchor="right" id="R Packages" order="4" weight="0.50121456" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -252,6 +275,13 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/CleaningAppleMusicPlayActivity.py</url>
+          <line>53</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
@@ -279,33 +309,29 @@
     <entry file="file://$PROJECT_DIR$/venv/pyvenv.cfg">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/tes">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CleaningAppleMusicDF.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="60" column="4" lean-forward="true" selection-start-line="60" selection-start-column="4" selection-end-line="60" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/tes" />
+    <entry file="file://$PROJECT_DIR$/CleaningAppleMusicDF.py" />
     <entry file="file://$PROJECT_DIR$/testrpy2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="22">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
           <folding>
             <element signature="e#0#43#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/pandas/core/series.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="4180" selection-start-line="4180" selection-end-line="4180" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CleaningAppleMusicPlayActivity.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="82" column="117" lean-forward="true" selection-start-line="82" selection-start-column="117" selection-end-line="82" selection-end-column="117" />
+        <state relative-caret-position="188">
+          <caret line="85" column="247" selection-start-line="85" selection-start-column="247" selection-end-line="85" selection-end-column="247" />
         </state>
       </provider>
     </entry>
