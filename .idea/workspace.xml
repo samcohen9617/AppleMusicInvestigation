@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fdc51d44-ae6d-42ee-9bab-c88efd1e0382" name="Default Changelist" comment="Testing commit from pycharm">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CleaningAppleMusicPlayActivity.py" beforeDir="false" afterPath="$PROJECT_DIR$/CleaningAppleMusicPlayActivity.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,14 +23,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="107" />
-          <entry key="py" value="3137" />
+          <entry key="py" value="3519" />
           <entry key="txt" value="38" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="38" />
-          <entry key="Python" value="3244" />
+          <entry key="Python" value="3626" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -66,8 +65,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CleaningAppleMusicPlayActivity.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="85" column="247" selection-start-line="85" selection-start-column="247" selection-end-line="85" selection-end-column="247" />
+            <state relative-caret-position="154">
+              <caret line="58" column="25" lean-forward="true" selection-start-line="58" selection-start-column="25" selection-end-line="58" selection-end-column="25" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+                <marker date="1612910783308" expanded="true" signature="1981:2008" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -76,7 +79,7 @@
         <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/pandas/core/series.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="93">
-              <caret line="4180" selection-start-line="4180" selection-end-line="4180" />
+              <caret line="4212" selection-start-line="4212" selection-end-line="4212" />
             </state>
           </provider>
         </entry>
@@ -93,6 +96,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>appleActifityDF</find>
+      <find>loca</find>
     </findStrings>
     <replaceStrings>
       <replace>appleActivityDF</replace>
@@ -250,7 +254,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3387978" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.0" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49959514" weight="0.3970856" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -277,9 +281,10 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <condition expression="localTime.__contains__(&quot;day&quot;)" language="Python" />
           <url>file://$PROJECT_DIR$/CleaningAppleMusicPlayActivity.py</url>
-          <line>53</line>
-          <option name="timeStamp" value="3" />
+          <line>65</line>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -290,6 +295,15 @@
         </breakpoint>
       </default-breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="breakpointCondition">
+      <expression>
+        <expression-string>localTime.__contains__(&quot;day&quot;)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/rpy2/robjects/lib/ggplot2.py">
@@ -324,14 +338,18 @@
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/pandas/core/series.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="93">
-          <caret line="4180" selection-start-line="4180" selection-end-line="4180" />
+          <caret line="4212" selection-start-line="4212" selection-end-line="4212" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CleaningAppleMusicPlayActivity.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="85" column="247" selection-start-line="85" selection-start-column="247" selection-end-line="85" selection-end-column="247" />
+        <state relative-caret-position="154">
+          <caret line="58" column="25" lean-forward="true" selection-start-line="58" selection-start-column="25" selection-end-line="58" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+            <marker date="1612910783308" expanded="true" signature="1981:2008" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

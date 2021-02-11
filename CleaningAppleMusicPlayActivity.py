@@ -3,12 +3,13 @@ import numpy as np
 import re
 import datetime
 from collections import Counter
+import math
 import matplotlib.pyplot as plt
 
 appleActifityDF = pd.read_csv("Apple Music Play Activity12.2.20.csv")
 
 # Starting to clean up the appleActivityDF
-
+pd.set_option('display.max_columns', None)
 # Renaming Artist and Song Name columns
 appleActifityDF.rename(columns={"Artist Name": "Artist", "Content Name": "Song"})
 
@@ -46,19 +47,32 @@ def sumTime(y):
 
 
 appleActifityDF["UTCTimeSeconds"] = appleActifityDF["UTCTime"].apply(sumTime)
-
+index = 0
 # Local Time
 appleActifityDF["LocalTimeSeconds"] = appleActifityDF["UTCTimeSeconds"] + appleActifityDF["UTC Offset In Seconds"]
 
-appleActifityDF["LocalTime"] = appleActifityDF["UTCTimeSeconds"].apply(
-    lambda a: str(datetime.timedelta(seconds=int(a))))
+print(appleActifityDF.head(59))
+def convertLocalSecondsToLocalTime(localTimeSeconds):
+    global index
+    index = index + 1
+    if math.isnan(localTimeSeconds):
+        return "00:00:00"
+    else:
+        if localTimeSeconds < 0:
+            localTimeSeconds = 86400 + localTimeSeconds
+        elif localTimeSeconds > 86400:
+            localTimeSeconds = localTimeSeconds - 86400
+        localTime = str(datetime.timedelta(seconds=int(localTimeSeconds)))
+        return localTime
+
+appleActifityDF["LocalTime"] = appleActifityDF["LocalTimeSeconds"].apply(convertLocalSecondsToLocalTime)
 
 appleActifityDF["LocalTimeFloorHours"] = appleActifityDF["LocalTime"].apply(
     lambda a: int(re.search("[^:]*", a).group(0)))
 
 # histogram of hours most listend during
-# appleActifityDF["LocalTimeFloorHours"].value_counts().plot(kind='bar')
-# plt.show()
+appleActifityDF["LocalTimeFloorHours"].value_counts().plot(kind='bar')
+plt.show()
 
 # Removing songs played on the sonos?
 # print(appleActifityDF["Build Version"].value_counts())
@@ -83,7 +97,9 @@ appleActifityDF = appleActifityDF[
                                                          appleActifityDF["ListenedDurationInMinutes"].quantile(.99))]
 
 appleActifityDF = appleActifityDF.drop(["Apple Id Number", "Apple Music Subscription", "Client IP Address", "Content Specific Type",
-"Device Identifier", "Event End Timestamp", "Event Reason Hint Type", "Event Received Timestamp", "Item Type", "Metrics Bucket Id", "Metrics Client Id", "Original Title", "Store Country Name", "UTC Offset In Seconds", "End Position In Milliseconds"], axis=1)
+"Device Identifier", "Event End Timestamp", "Event Reason Hint Type", "Event Received Timestamp", "Item Type", "Metrics Bucket Id", "Metrics Client Id", "Original Title", "Store Country Name", "UTC Offset In Seconds", "End Position In Milliseconds", "Event End Timestamp"], axis=1)
+
+
 print(appleActifityDF["ListenedDurationInMinutes"].std())
-print(appleActifityDF.head(10))
+print(appleActifityDF.head(1))
 
