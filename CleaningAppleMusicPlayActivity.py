@@ -99,13 +99,41 @@ appleActifityDF = appleActifityDF[
 appleActifityDF = appleActifityDF.drop(["Apple Id Number", "Apple Music Subscription", "Client IP Address", "Content Specific Type",
 "Device Identifier", "Event End Timestamp", "Event Reason Hint Type", "Event Received Timestamp", "Item Type", "Metrics Bucket Id", "Metrics Client Id", "Original Title", "Store Country Name", "UTC Offset In Seconds", "End Position In Milliseconds", "Event End Timestamp", "Event Start Timestamp", ], axis=1)
 
+#Adding in the Month Year cclumn
+appleActifityDF['MonthYear'] = appleActifityDF['Month'].map(str)+ '/' +appleActifityDF['Year'].map(str)
+appleActifityDF['MonthYear'] = pd.to_datetime(appleActifityDF['MonthYear'], format='%m/%Y')
+print(appleActifityDF.head(1))
 # Next steps returning chart of most frequently listened to artists
 #Top 20 most frequently played artists
-top20Artists = appleActifityDF["Artist Name"].value_counts()[:20].index.tolist()
+top20Artists = appleActifityDF["Artist Name"].value_counts()[:8].index.tolist()
 
 #df with only the top 20 artists
 appleActifityDFTop20 = appleActifityDF[pd.DataFrame(appleActifityDF["Artist Name"].tolist()).isin(top20Artists).any(1).values]
 
 
-top20ByMonthYear = appleActifityDFTop20.groupby(["Artist Name", 'Year', "Month"])["Artist Name"].count()
+top20ByMonthYear = appleActifityDFTop20.groupby(["Artist Name", 'MonthYear'])["Artist Name"].count().to_frame('Count').reset_index()
+
 print(top20ByMonthYear.tail(65))
+
+#Plot in progress
+#Showing plays by top x artists by month
+pivotedTop20ByMonthYear = top20ByMonthYear.pivot(index='MonthYear', columns='Artist Name', values='Count')
+pivotedTop20ByMonthYear = pivotedTop20ByMonthYear.fillna(0)
+pivotedTop20ByMonthYear = pivotedTop20ByMonthYear.sort_values(by='MonthYear')
+print(pivotedTop20ByMonthYear.head(50))
+pivotedTop20ByMonthYear.plot(marker='o')
+plt.show()
+
+#Showing count of plays for each month
+totalPlaysByMonthYear = appleActifityDF.groupby(['MonthYear'])["MonthYear"].count().to_frame('Count').reset_index()
+print(totalPlaysByMonthYear.tail(50))
+totalPlaysByMonthYear.plot(x="MonthYear", y="Count", kind="line", marker='o')
+#plt.show()
+
+
+#Showing total time listened by month
+totalPlaysByMonthYear = appleActifityDF.groupby(['MonthYear'])["ListenedDurationInMinutes"].sum().to_frame('Listened Time').reset_index()
+totalPlaysByMonthYear["Listened Time in Days"] = totalPlaysByMonthYear["Listened Time"]/1440
+print(totalPlaysByMonthYear.tail(50))
+totalPlaysByMonthYear.plot(x="MonthYear", y="Listened Time in Days", kind="line", marker='o')
+plt.show()

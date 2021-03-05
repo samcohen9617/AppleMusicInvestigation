@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fdc51d44-ae6d-42ee-9bab-c88efd1e0382" name="Default Changelist" comment="Testing commit from pycharm">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CleaningAppleMusicPlayActivity.py" beforeDir="false" afterPath="$PROJECT_DIR$/CleaningAppleMusicPlayActivity.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,14 +26,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="107" />
-          <entry key="py" value="4035" />
+          <entry key="py" value="4607" />
           <entry key="txt" value="38" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="38" />
-          <entry key="Python" value="4142" />
+          <entry key="Python" value="4714" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -69,8 +68,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CleaningAppleMusicPlayActivity.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="109" column="80" selection-start-line="109" selection-start-column="80" selection-end-line="109" selection-end-column="80" />
+            <state relative-caret-position="270">
+              <caret line="135" column="91" lean-forward="true" selection-start-line="135" selection-start-column="91" selection-end-line="135" selection-end-column="91" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -101,6 +100,7 @@
       <find>appleActifityDF</find>
       <find>loca</find>
       <find>print</find>
+      <find>plt</find>
     </findStrings>
     <replaceStrings>
       <replace>appleActivityDF</replace>
@@ -268,7 +268,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/CleaningAppleMusicPlayActivity.py</url>
-          <line>110</line>
+          <line>114</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
@@ -329,8 +329,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CleaningAppleMusicPlayActivity.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="109" column="80" selection-start-line="109" selection-start-column="80" selection-end-line="109" selection-end-column="80" />
+        <state relative-caret-position="270">
+          <caret line="135" column="91" lean-forward="true" selection-start-line="135" selection-start-column="91" selection-end-line="135" selection-end-column="91" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
